@@ -4,7 +4,6 @@ const addAdminSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true
     },
     password: {
         type: String,
@@ -12,6 +11,6 @@ const addAdminSchema = new Schema({
     }
 }, { timestamps: true })
 
-const AddAdmin = model("AddAdmin", addAdminSchema);
+const AddAdmin = model("AddAdmin", addAdminSchema); 
 
 export default AddAdmin;

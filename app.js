@@ -11,7 +11,13 @@ import addAdminRouter from "./controllers/addAdmin.controllers.js";
 const app = express(); 
 const port = process.env.PORT || 8000;
 
-app.use(cors())
+const corsOptions = {
+    origin: ["http://localhost:5173", "https://67f50c68d94f4b34ffebb5d2--feedback-frontend-project.netlify.app/"], // frontend URLs allowed
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, 
+};
+
+app.use(cors(corsOptions))
 app.use(bodyParser.json())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
