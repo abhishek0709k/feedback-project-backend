@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://67f50c68d94f4b34ffebb5d2--feedback-frontend-project.netlify.app/"], // frontend URLs allowed
+    origin: ["http://localhost:5173", "https://67f514b54e7e4966e5a0edc2--feedback-frontend-project.netlify.app"], // frontend URLs allowed
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, 
 };
