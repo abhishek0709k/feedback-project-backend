@@ -8,7 +8,6 @@ const addFeedbackSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true
     },
     feedback: {
         type: String,
